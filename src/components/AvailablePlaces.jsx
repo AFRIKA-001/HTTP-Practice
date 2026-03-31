@@ -20,7 +20,7 @@ try{
     navigator.geolocation.getCurrentPosition((position) => {
       const sortedPlaces= sortPlacesByDistance(data.places,position.coords.latitude,position.coords.longitude)
        setAvailablePlaces(sortedPlaces);
-           setIsLoading(true);
+           setIsLoading(false);
       // Do something with the position data
     });
    
